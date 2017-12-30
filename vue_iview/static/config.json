@@ -1,0 +1,4 @@
+{
+    "server": "http://localhost:4462/api", // 配置API服务器IP地址
+    "timeout": 300000, // 设置请求超时30秒
+}

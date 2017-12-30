@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+.border {
+  border: 1px solid #e9eaec !important;
+}
+
+.divContent {
+  height: 100%;
+}
+.borderPanel {
+  border: 1px solid #e9eaec !important;
+}
+.float-right {
+  float: right;
+}
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dialog-modal{
+    .ivu-modal {
+        top: 0;
+        max-width: 750px;
+         height: 100%;
+         max-height: 700px;
+        .ivu-modal-content {
+          height: 100%;
+          .ivu-modal-body {
+            position: absolute;
+            top: 50px;
+            bottom: 60px;
+            width: 100%;
+            overflow-y: auto;
+          }
+          .ivu-modal-footer {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+          }
+        }
+      }
+  }
+
+  // 设置验证文本框label前面的*，文本左对齐
+  .ivu-form-item-label ::before{
+    margin-left: -6px;
+  }
+
+  .table-cell-index .ivu-table-cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .table-cell-smallpadding {
+    .ivu-table-cell{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .smallPadding .ivu-table-cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .ivu-table-cell>span{
+    word-break: keep-all;
+  }
+   
+
+
+  // gzbutton如果显示tootip的话在buttonGrup下会有显示不正常长
+.ivu-btn-group > .ivu-tooltip {
+  margin-left: -1px;
+}
+
+.ivu-btn-group > .ivu-tooltip:first-child:not(:last-child) .ivu-btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ivu-btn-group > .ivu-tooltip:last-child:not(:first-child) .ivu-btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.ivu-btn-group .ivu-tooltip:not(:first-child):not(:last-child) .ivu-btn {
+  border-radius: 0;
+}
